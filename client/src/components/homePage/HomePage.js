@@ -4,6 +4,7 @@ import {Grid,CircularProgress, Box } from '@material-ui/core';
 import Recipes from '../recipes/Recipes';
 import homePageImage from '../../assets/main-page-pic.svg'
 import { getRecipes } from '../../services/rest.cleint.service';
+import SearchButton from '../searchButton/SearchButton';
 
 
 const HomePage = () => {
@@ -79,7 +80,7 @@ const HomePage = () => {
                     <p>Find Out Your Favorites Recipes And Try To Cook It ...</p>
                     <div className="recipes__header-content__input">
                         <input type="email" placeholder="Type Here ..." onKeyDown={handleKeyDown} value={querySerch} onChange={(e) => setSearchQuery(e.target.value)} />
-                        <button type="button" onClick={searchSubmitHandler}>Search</button>
+                        <SearchButton onClick={searchSubmitHandler} label="Search"/>
                     </div>
                 </div>
                 <div className="recipes__header-image">

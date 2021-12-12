@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom'
 import { getRecipe } from '../../services/rest.cleint.service';
 import './details.css';
 
-const Details = () => {
-    const { id } = useParams();
+const Details = (props) => {
+    const { id } = props.match.params;
     const [recipesDetails, setRecipesDetails] = useState([]);
 
 /*
@@ -60,7 +60,7 @@ and return an object of information of recipes
                      </ReadMore>
                  </p>
                  }
-                <h4><a href={recipesDetails.sourceUrl}>Source</a></h4>
+                <h4><a href={recipesDetails.sourceUrl}>More Information</a></h4>
             </div>
         </div>
         </div>
