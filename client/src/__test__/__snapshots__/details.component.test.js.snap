@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details component recieves the params successfully 1`] = `ShallowWrapper {}`;
+
+exports[`Link changes the class when hovered 1`] = `ShallowWrapper {}`;
